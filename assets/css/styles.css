@@ -1,0 +1,1163 @@
+body{
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: roboto, sans-serif !important;
+    background-color: #0E0922 !important;
+}
+.background-video {
+   position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+.theme-switch {
+    text-decoration: none;
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: white; 
+    padding: 10px;
+    border-radius: 50%; 
+    z-index: 999; 
+}
+.fas{
+    color: black  !important;
+}
+.fas:hover{
+    color: grey !important; 
+}
+
+
+
+.banner{
+
+    margin-left: 50%;
+    margin-top: 15.6%;
+    margin-bottom: 26%;
+
+}
+.carousel {
+    width: 70%; 
+    margin: 0 auto; /* Centrez le carrousel horizontalement */
+}
+
+.carousel-inner {
+    text-align: center; 
+}
+
+.carousel-inner h1 {
+    font-family: Tw Cen MT;
+    color: white;
+    width: 100%;
+    font-size: 7vw; /* Personnalisez la taille de la police du titre */
+}
+
+.carousel-inner p {
+    color: white;
+    font-size: 1.6vw; /* Personnalisez la taille de la police du texte */
+}
+
+
+
+
+/* Style for the social icons container */
+.social-icon {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 1;
+}
+
+/* Style for individual social icons */
+.social-icon a {
+    margin-bottom: 10px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: white; 
+    border-radius: 50%; 
+    padding: 7px; 
+}
+
+.social-icon img {
+    width: 35px; 
+    height: 35px;
+    transition: 0.7s;
+}
+.social-icon img:hover{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+
+ /* Conteneur pour l'icône */
+         .icon-container {
+            width: 80%;
+            position: absolute;
+            margin-top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .ic-principal{
+            
+            height: auto;
+            margin: auto;
+        }
+        .ic-principal img{
+            width: 6%;
+            height: auto;
+            line-height: 100px; 
+            color: white; 
+            font-size: 24px; 
+            transition: 0.3s;
+
+        }
+        .ic-principal img:hover{
+            width: 6.5%;
+        }
+        .ic-secondaire{
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+           margin-top: 3%;
+            text-align: center;
+            display: flex;
+            visibility: hidden;
+            }
+        .ic-secondaire img{
+            margin: 2%;
+            width: 30%;
+            height: auto;
+        }
+         .ic-secondaire img:hover{
+            width: 35% !important;
+        }
+        .ic-secondaire a{
+            text-decoration: none !important;
+        }
+        .ic-secondaire a p{
+            font-size: 1vw;
+            color: white;
+            
+        }
+        .icon-container img:hover{
+            cursor: pointer;
+        }
+
+        .ic-principal:hover .ic-secondaire{
+            visibility: visible;
+
+        }
+       
+
+.menu_services {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    left: 5%;
+
+}
+
+.image-box {
+    margin: 20px; 
+    text-align: center;
+    position: relative;
+    max-width: 70%; 
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.image-box img{
+    width: 97%;
+    height: 15vw;
+    transition: 0.5s;
+}
+.image-box img:hover{
+    width: 100%;
+    height: 15.5vw;
+}
+
+.image-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    padding: 4%;
+    width: 98%;
+    font-size: 1.5vw; 
+    transition: 0.4s;
+}
+.image-title:hover{
+    font-size: 1.6vw;
+    cursor: pointer;
+}
+.menu_textes{
+    font-size: 1.5vw;
+    width: 90%;
+    align-items: center;
+    justify-content: center;text-align: center;
+    margin: auto;
+    color: white;
+}
+
+
+/* Style for the box container */
+.box-container {
+    max-width: 90%; 
+    margin: 20px auto; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+.slyde{opacity: 0; 
+    transform: translateX(20px); 
+    transition: opacity 0.3s, transform 0.8s; }
+
+/* Style for individual boxes */
+.box {
+    box-shadow: 0 0 10px rgba(255,255,255,.2);
+    color: white;
+    flex: calc(33.33% - 20px); 
+    margin: 15px; 
+    text-align: center; 
+    transition: 0.2s;
+    
+}
+.box:hover{
+    box-shadow: 0 0 20px rgba(255,255,255,.2);
+    cursor: pointer;
+}
+.box p{
+    margin: 5%;
+    font-size: 1.3vw;
+}
+/* Style for hover effect */
+.box:hover {
+    opacity: 1; 
+    transform: translateX(0); 
+}
+
+   /* Style pour le titre */
+.box1-title {
+    font-size: 2vw;
+    margin-top: 20px;
+}
+
+/* Style pour le contenu */
+.box1-content {
+    margin: 20px 0;
+}
+
+/* Style pour la vidéo */
+.box-video {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    
+}
+.box-video video{
+    position: relative;
+    width: 100%;
+    bottom: 0;
+
+}
+
+
+/* Styles pour la Box 2 */
+#box2 {
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* Style pour l'image */
+.box2-image {
+    width: 100%;
+    position: relative; 
+}
+
+.box2-image img {
+    width: 100%;
+    height: auto; 
+    margin: 0;
+}
+
+/* Style pour le titre */
+.box2-title {
+    color: white;
+    font-size: 2vw;
+    margin: 0;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+    margin-top: 20px;
+}
+
+/* Style pour le contenu */
+.box2-content {
+    margin: 20px 0;
+}
+
+/* Styles pour la Box 3 */
+#box3 {
+    text-align: center; /
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+    width: 100%; 
+    justify-content: flex-start; /* Aligner le contenu en haut de la boîte */
+    align-items: stretch; /* Ajuster la largeur des éléments enfants à la largeur de la boîte */
+}
+
+/* Style pour le titre */
+.box3-title {
+    font-size: 2vw;
+    margin: 0;
+    width: 100%; 
+    margin-top: 20px;
+}
+
+/* Style pour le contenu */
+.box3-content {
+    margin: 20px 0;
+    width: 100%; 
+}
+
+.box3-image{
+    width: 100%;
+    align-self: flex-end
+}
+/* Style pour l'image */
+.box3-image img {
+    width: 100%; 
+    height: auto; 
+    margin: 0;
+}
+.timeline-icon img{
+    width: 50%;
+}
+
+
+
+
+/* Style pour la frise chronologique */
+.timeline {
+    display: flex;
+    justify-content: space-between; /* Espacement égal entre les événements */
+    margin-top: 20px;
+    width: 100%; /* La frise occupe 100% de la largeur de la Box 4 */
+}
+
+/* Style pour chaque événement dans la frise */
+.timeline-event {
+    margin: 0.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc; /* Bordure autour de chaque événement */
+    padding: 10px; /* Espacement interne */
+    flex: 1; /* Les événements se répartissent automatiquement l'espace disponible */
+   width: 0;
+}
+.T1{
+    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0% 100%, 0 50%, 0% 0%);
+}
+.T2{
+    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
+}
+.T3{
+     clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
+}
+.T4{
+     clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
+}
+.T5{
+   
+}
+/* Style pour l'icône de chaque événement */
+.timeline-icon {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Style pour le titre de chaque événement */
+.timeline-title {
+    font-size: 12px;
+    color: black;
+}
+
+
+/* Styles pour la Box 4 */
+#box4 {
+    height: auto;
+    text-align: center; /* Centrer le contenu */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Position relative pour positionner le titre sur l'image */
+    width: 100%; /* La Box 4 occupe 100% de la largeur de son conteneur */
+    margin: 20 auto; /* Centrer la Box 4 horizontalement */
+}
+
+/* Style pour le titre */
+.box4-title {
+    font-size: 2vw;
+    margin: 0;
+    width: 100%; /* Titre occupe 100% de la largeur de la boîte */
+    margin-top: 20px;
+}
+
+/* Style pour le contenu */
+.box-content {
+    margin: 20px 0;
+    width: 100%; /* Contenu occupe 100% de la largeur de la boîte */
+}
+
+
+/* Styles pour la Box 5 */
+#box5 {
+    background-size: cover;
+    background-position: center center;
+    background-image: ur(../medias/pourquoi.png);
+    text-align: center; /* Centrer le contenu */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrer verticalement */
+    align-items: center; /* Centrer horizontalement */
+    position: relative; /* Position relative pour positionner le titre sur l'image */
+    width: 100%; /* La Box 5 occupe 100% de la largeur de son conteneur */
+    height: 80vh; /* Hauteur de la Box 5 égale à la hauteur de la fenêtre */
+}
+
+/* Style pour le titre */
+.box5-title {
+    font-size: 3vw;
+    margin: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Animation de flottement pour le titre */
+.animated {
+    animation: floatAnimation 2s ease infinite;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Style pour l'icône */
+.box5-content {
+    margin-top: 20px; /* Espacement entre le titre et l'icône */
+}
+
+/* Style pour le lien de l'icône */
+.box5-content a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Style pour l'icône */
+.box5-content img {
+    width: 50px;
+    transition: 0.5s;
+}
+.box5-content img:hover {
+    width: 55px;
+}
+
+
+
+
+
+/* Styles pour la Box 6 */
+/* Styles pour la Box 6 */
+#box6 {
+    width: 100%; /* La Box 6 occupe 100% de la largeur de son conteneur */
+    height: 80vh;
+    text-align: center; /* Centrer le contenu */
+    padding: 0 ; /* Espacement en haut et en bas du titre */
+    position: relative; /* Position relative pour placer les petites boîtes en bas */
+}
+
+/* Style pour le titre */
+.box6-title {
+    background-color: black; /* Fond noir */
+    color: white; /* Texte blanc */
+    font-size: 3vw;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Style pour le conteneur des petites boîtes */
+.small-boxes-container {
+    height: 80%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column; /* Aligner les petites boîtes verticalement */
+    align-items: center; /* Centrer les petites boîtes horizontalement */
+    padding: 20px;
+    bottom: 0; /* Aligner les petites boîtes en bas */
+    left: 0; /* Centrer les petites boîtes horizontalement */
+    right: 0; /* Centrer les petites boîtes horizontalement */
+}
+
+/* Style pour chaque petite boîte */
+.small-box {
+    background-color: transparent;
+    border: 2px solid white; /* Bordure blanche */
+    border-radius: 10px; /* Bordures arrondies */
+    padding: 10px;
+    text-align: center;
+    height: auto;
+   width: 95%;
+    margin-right:2%;
+    margin-left:2%;
+    margin: 2%;
+}
+
+/* Style pour le titre de chaque petite boîte */
+.small-box-title {
+    color: skyblue;
+    font-size: 24px;
+    margin: 0;
+}
+
+
+/* Style pour le sous-titre de chaque petite boîte */
+.small-box-subtitle {
+    font-size: 16px;
+    margin: 0;
+    text-align: left;
+}
+.small-box a{
+    color: white;
+}
+.small-box a:hover{
+    text-decoration: none;
+    color: grey;
+}
+
+
+
+/* Style pour la section "À Propos" */
+.about-section {
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style de la partie de gauche */
+.left-side {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.left-side h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style de la partie de droite (l'image) */
+.right-side {
+    flex: 1;
+    text-align: center;
+}
+
+.right-side img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style de base pour la section "Avis des Clients" */
+.customer-reviews {
+    color: white;
+    text-align: center;
+    margin: 6%;
+    padding: 5%;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+/* Style pour le titre de la section */
+.section-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    position: relative;
+    animation: waveAnimation 2s ease-in-out infinite; /* Ajouter une animation en boucle */
+}
+
+/* Animation en boucle "waveAnimation" */
+@keyframes waveAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(5px);
+    }
+}
+
+
+
+/* Style pour les boîtes d'avis */
+.review-box {
+    background-color: white;
+    color: black !important;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+/* Style pour le texte des avis */
+.review-text {
+    font-size: 16px;
+}
+
+/* Style pour le formulaire */
+.review-form {
+    margin-top: 20px;
+}
+
+/* Style pour les éléments du formulaire */
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style pour le bouton de soumission du formulaire */
+button:hover {
+    background-color: #555;
+}
+
+
+
+
+ /* Style pour le bas de page */
+        /* Style pour le bas de page */
+.footer {
+    background-image: url('../medias/earth-3866609_1920.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    position: relative; /* Ajoutez cette ligne */
+    bottom: 0; /* Ajoutez cette ligne */
+    width: 100%; /* Ajoutez cette ligne */
+    padding: 50px 0;
+}
+
+
+        /* Style pour la barre de saisie d'email */
+        .email-bar {
+            width: 300px;
+            height: 40px;
+            border: none;
+            border-radius: 20px;
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px;
+        }
+
+        /* Style pour le bouton "Nous Contacter" */
+        .contact-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        /* Style pour l'icône de l'email */
+        .email-icon {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        /* Style pour l'adresse email */
+        .email-address {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        /* Style pour les icônes de réseaux sociaux */
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+/*--------------------------------------------------------------
+# article
+--------------------------------------------------------------*/
+
+
+/* Style du conteneur de l'article */
+.long-article {
+    color: white;
+    max-width: 100%;
+    margin: 0 10%; /* Marge gauche et droite de 20px */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Style des titres colorés */
+.article-title {
+    color: skyblue;
+    font-size: 3.5vw;
+}
+
+/* Style des images alignées à gauche */
+.image-left {
+    float: left;
+    max-width: 45%; /* Largeur maximale des images */
+    height: auto;
+    margin: 0 20px 20px 0; /* Marge autour de l'image */
+}
+
+/* Style des images alignées à droite */
+.image-right {
+    float: right;
+    max-width: 45%; /* Largeur maximale des images */
+    height: auto;
+    margin: 0 0 20px 20px; /* Marge autour de l'image */
+}
+
+/* Style du texte à côté de l'image */
+.image-and-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.image-and-text p{
+    width: 50%;
+}
+
+/* Animation d'apparition pour les éléments */
+.long-article p, .long-article h2, .long-article img {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.long-article p, .long-article h2, .long-article img {
+    animation: appear 1s ease forwards;
+}
+.long-article a{
+        color: #A9CCE3;
+        text-decoration: underline;
+        font-size: 1.5vw;
+}
+.long-article p{
+    font-size: 1.5vw;
+        }
+.long-article h2{
+    font-size: 2.5vw;
+        color: white;
+        text-decoration: underline;
+}
+.long-article .auteur{
+    font-style: italic;
+}
+.long-article span{
+    color: #CD6155;
+    font-size: 20px;
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Style de la ligne animée sous les titres */
+/* Style de la ligne animée sous les titres */
+.underline-animation {
+    width: 0;
+    height: 2px;
+    background-color:white; /* Couleur de la ligne au choix */
+    margin-top: 5px;
+    animation: lineAnimation 10s linear infinite; /* Animation en boucle pendant 3 secondes */
+}
+
+@keyframes lineAnimation {
+    0% {
+        width: 0; /* La ligne commence sans largeur */
+    }
+    50% {
+        width: 100%; /* À mi-chemin de l'animation, la ligne est à pleine largeur */
+    }
+    100% {
+        width: 0; /* La ligne revient à aucune largeur à la fin de l'animation */
+    }
+}
+
+
+/*--------------------------------------------------------------
+# services
+--------------------------------------------------------------*/
+
+
+
+.service-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.vertical-block {
+    width: 100%;
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.vertical-block h1{
+    margin: 0;
+    position: relative;
+    animation: wave 10s infinite;
+    padding: 10px;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+@keyframes wave {
+    0% {
+        left: -20px; /* Position initiale (gauche) */
+    }
+    50% {
+        left: 20px; /* Position droite */
+    }
+    100% {
+        left: -20px; /* Revenir à la position initiale (gauche) */
+    }
+}
+.vertical-block p{
+    color: white;
+    padding: 20px;
+}
+.vertical-block .hidden {
+    display: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.vertical-block:hover .hidden {
+    cursor: pointer;
+    display: flex;
+}
+
+.small-block {
+    width: calc(33.33% - 20px); /* 3 colonnes avec marge */
+    height: 250px;
+    margin: 10px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all 0.9s ease;
+
+}
+.small-block p::after {
+    content: "Lire plus";
+    display: none;
+    color: #0077cc;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.small-block p:hover::after {
+    display: inline;
+    margin-left: 10px;
+}
+
+.small-block img {
+    max-width: 100%;
+    height: auto;
+}
+
+.small-block h2 {
+
+    font-size: 16px;
+    margin: 2%;
+}
+
+.small-block p {
+    height: 100%;
+    color: black !important;
+    font-size: 14px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+.small-block span{
+   font-weight: 700;
+}
+
+.small-block:hover p {
+    display: block;
+}
+.small-block:hover {
+    background-color: #e0e0e0; /* Couleur de fond au survol */
+}
+
+
+
+
+/*--------------------------------------------------------------
+# about
+--------------------------------------------------------------*/
+
+.about-container {
+    color: white;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-bottom: 5%;
+    }
+
+.about-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 5%;
+}
+
+.about-col {
+    flex: 1;
+    margin: 5px;
+   
+}
+
+/* Styles spécifiques pour chaque conteneur */
+.image1-container,.image2-container, .video-container, .text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+/* Styles spécifiques pour l'effet de zoom/dézoom */
+.zoom-effect {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: zoom 5s infinite alternate;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+
+/* Ajustements pour la vidéo */
+.video-container video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Styles généraux */
+.image2-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.text-container p{
+    margin: 10%;
+    
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact {
+  padding-bottom: 30px;
+}
+
+.contact .info-box {
+  color: #444;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+  padding: 20px 0 30px 0;
+  margin-bottom: 30px;
+}
+
+.contact .info-box i {
+  font-size: 32px;
+  color: #68A4C4;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px dotted #a2cce3;
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #666;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.contact .php-email-form {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input::focus,
+.contact .php-email-form textarea::focus {
+  background-color: #68A4C4;
+}
+
+.contact .php-email-form input {
+  padding: 10px 15px;
+}
+
+.contact .php-email-form textarea {
+  padding: 12px 15px;
+}
+
+.contact .php-email-form button[type=submit] {
+  background: #68A4C4;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+}

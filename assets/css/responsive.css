@@ -1,0 +1,150 @@
+@media (max-width: 768px) {
+    .theme-switch{
+        font-size: 15px;
+    }
+    .social-icon img {
+    width: 25px;
+    height: 25px;
+    }
+    .banner {
+    margin-left: 50%;
+    margin-top: 16.3%;
+    margin-bottom: 25%;
+    }
+    .carousel-inner p {
+    margin-top: -6%;
+    }
+    .ic-principal {
+    margin-top: 8%;
+    }
+    .ic-secondaire a p{
+            font-size: 2vw;
+     }
+    .menu_services {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .menu_textes{
+    font-size: 3vw;
+    }
+    .image-box{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .image-title {
+        font-size: 3vw;
+    }
+    .image-title:hover{
+    font-size: 3.5vw;
+    }
+    .image-box img{
+        height: 100px;
+    }
+    .about-section {
+        flex-direction: column; /* Passer à une disposition en colonne */
+        text-align: center; /* Centrer tout le contenu */
+    }
+    
+    .about-left-column, .about-right-column {
+        flex: none; /* Annuler la flexibilité des colonnes */
+        width: 100%; /* Largeur de 100% pour chaque colonne */
+    }
+    
+    /* Réduire la taille du titre IDEA pour les petits écrans */
+    .idea-title {
+        font-size: 24px;
+    }
+    .box {
+        flex-basis: 100%; /* Boîtes à 100% de largeur sur les petits écrans */
+    }
+    .box1-title{
+        font-size: 4vw;
+    }
+    .box2-title{
+        font-size: 4vw;
+    }
+    .box3-title{
+            font-size: 4vw;
+        }
+    .box4-title{
+            font-size: 4vw;
+        }
+    .box5-title{
+            font-size: 4vw;
+        }
+    .box6-title{
+        font-size: 4vw;
+    }
+    .box p{
+        font-size: 3vw;
+    }
+    .timeline-title{
+        font-size: 1.5vw;
+    }
+
+
+    /* Réduire la taille du titre IDEA pour les petits écrans */
+    .idea-title {
+        font-size: 24px;
+    }
+
+
+    .image-left, .image-right {
+        max-width: 100%; /* Images pleine largeur sur des écrans plus petits */
+        float: none;
+        margin: 0;
+    }
+
+
+
+    .image-and-text p{
+    width: 100%;
+
+}
+  .row {
+        flex-direction: column;
+    }
+    .col {
+        width: 100%;
+    }
+
+    .article-title{
+        font-size: 6vw;
+    }
+    .long-article h2{
+        font-size: 4vw;
+    }
+    .long-article p{
+        font-size: 3.5vw;
+    }
+    .vertical-block h1{
+        font-size: 5vw;
+    }
+    .vertical-block p{
+        font-size: 3vw;
+    }
+    .small-block {
+    width: 100%;
+    height: 100%;
+}
+.image1-container, .image2-container{
+    display: none;
+}
+}
+
+/* Pour les écrans de largeur > 768px */
+@media (min-width: 769px) {
+    .row {
+        flex-direction: row;
+    }
+    .col {
+        width: auto;
+    }
+}
+
+
+
+
+
