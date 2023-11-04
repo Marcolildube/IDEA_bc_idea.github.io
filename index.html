@@ -101,21 +101,40 @@
         <a href="#"><img src="assets/medias/skype.png"></a>
         </div>
         <!-- fin BULLES -->
+        
+      <div class="center-line"></div>
+    <div class="point"></div>
+    <script>
+        const point = document.querySelector(".point");
+        const centerLine = document.querySelector(".center-line");
+
+        // Fonction pour mettre à jour la position du point lumineux
+        function updatePointPosition() {
+            const scrollY = window.scrollY;
+            const centerY = window.innerHeight / 2;
+            point.style.top = (scrollY + centerY) + "px";
+            requestAnimationFrame(updatePointPosition);
+        }
+
+        updatePointPosition(); // Démarre la mise à jour de la position
+
+        // Ajustez la couleur et d'autres styles du point lumineux ici
+    </script>
 
         <!-- debut menu services -->
-   
+    
          <div class="menu_services">
         <div class="image-box">
             <img src="assets/medias/laptop-2443052_1920.jpg" alt="Image 1">
-            <a href="#"><div class="image-title">Creation site web</div></a>
+            <a href="creation_site_web.html"><div class="image-title">Creation site web</div></a>
         </div>
         <div class="image-box">
             <img src="assets/medias/geometric-3045402_1920.png" alt="Image 2">
-            <div class="image-title">Conception Graphique Digitale</div>
+            <a href="conception_graphique_digital.html"><div class="image-title">Conception Graphique Digitale</div></a>
         </div>
         <div class="image-box">
             <img src="assets/medias/bag-1245954_1920.jpg" alt="Image 3">
-            <div class="image-title">Assistance/Gestion</div>
+            <a href="assistance-gestion.html"><div class="image-title">Assistance/Gestion</div></a>
         </div>
     </div>
 
@@ -206,59 +225,78 @@ Vous êtes au bon endroit ! Transmettez vos messages à travers des campagnes de
         </div>
 
     </div>
-
-        <div class="box slyde" id="box5">
-        <h2 class="box5-title animated">Pourquoi Nous?</h2>
-        <div class="box5-content">
-            <a href="votre-lien.html">
-                <i class="fas fa-icon"><img src="assets/medias/plus.png" class="box5-title animated"></i>
-            </a>
-        </div>
-    </div>
-
-        <div class="box slyde" id="box6">
-        <h2 class="box6-title">Actualités</h2>
-        <div class="small-boxes-container">
-            <div class="small-box">
-                <a href=""><h3 class="small-box-title">Marketing communication</h3></a>
-                <a href=""><p class="small-box-subtitle">&bull;Qu’est-ce que la communication digitale ?</p></a>
-                <a href=""><p class="small-box-subtitle">&bull;L’objectif ?</p></a>
-               <a href=""> <p class="small-box-subtitle">&bull;Stratégie de communication digitale sur les médias sociaux</p></a>
-                <a href=""><p class="small-box-subtitle">&bull;Le développement du contenu de marque</p></a>
-                <a href=""><p class="small-box-subtitle">&bull;Communication ou Marketing ?</p></a>
-            </div>
-            <div class="small-box">
-                <h3 class="small-box-title">Chronophage processus :</h3>
-                <p class="small-box-subtitle">&bull;Des solutions pour réduire les activités chronophages</p>
-            </div>
-            <div class="small-box">
-                <h3 class="small-box-title">Titre 3</h3>
-                <p class="small-box-subtitle">Sous-titre 3</p>
-            </div>
-            <div class="small-box">
-                <h3 class="small-box-title">Titre 4</h3>
-                <p class="small-box-subtitle">Sous-titre 4</p>
-            </div>
-        </div>
-    </div>
-    </div>
     </div>
     <!-- fin box menu -->
 
-    <!-- debut about section -->
-    <section class="about-section">
-        <div class="left-side">
-            <h1>IDEA</h1>
-            <h3>À propos de nous</h3>
-            <p>Impulse Digital Experience Agency est une agence de communication, marketing digital, développement web et multiservice à l'international.
-                  Nous mettons en place des stratégies personnalisées afin d'obtenir des solutions adéquates st éfficaces pour répondre aux attentes des entreprises et entités avec lesquelles nous travaillons
+    <div class="blog-section">
+    <h2 class="section-title">Blog & Actus</h2>
+    <hr class="section-divider">
+    <p class="section-paragraph">Bienvenue sur notre blog et nos actualités. Découvrez les dernières informations et mises à jour ici.</p>
+    <div class="box-container2">
+      <div class="blog-box">
+        <img src="assets/medias/396530042_737383088407879_6697849920658171849_n.jpg" alt="Image 1">
+        <p>Partenariat entre IDEA et DISCIPLES FC-FF</p>
+        <button class="read-more-button">Lire la suite</button>
+      </div>
+      <div class="blog-box">
+        <p>Marketing communication<br>
+•Qu’est-ce que la communication digitale ?<br>
 
-                  Une implication totale pour obtenir des résultats et emmener nos collaborateurs à un niveau supérieur.</p>
-        </div>
-        <div class="right-side">
-            <img src="assets/medias/about-image.jpg" >
-        </div>
-    </section>
+•L’objectif ?<br>
+
+•Stratégie de communication digitale sur les médias sociaux<br>
+
+•Le développement du contenu de marque<br>
+
+•Communication ou Marketing ?</p>
+        <button class="read-more-button">Lire la suite</button>
+      </div>
+      <div class="blog-box">
+        <img src="assets/medias/MarTech-v2-scaled.jpg" alt="Image 3">
+        <p>Chronophage processus :<br>
+•Des solutions pour réduire les activités chronophages</p>
+        <button class="read-more-button">Lire la suite</button>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- debut about section -->
+    <div class="main-box">
+    <h1 class="main-title">IDEA</h1>
+   <p class="sub-title" id="subtitle">Impulse Digital experience Agency</p>
+
+
+
+    <div class="sub-box sub1">
+      <h2 class="sub-title">A propos de nous</h2>
+      <p>Impulse Digital Experience Agency est une agence de communication, markrting digital, développement web et multiservice à l'international. Nous mettons en place des stratégies personnalisées afin d'obtenir des solutions adéquates st éfficaces pour répondre aux attentes des entreprises et entités avec lesquelles nous travaillons Une implication totale pour obtenir des résultats et emmener nos collaborateurs à un niveau supérieur.</p>
+      
+    </div>
+
+    <div class="sub-box">
+      <img src="assets/medias/about-image.jpg" alt="Image">
+    </div>
+
+    <div class="bottom-box">
+      <h3 class="bottom-title">Pourquoi nous?</h3>
+       <img src="assets/medias/plus.png" alt="Icône" onclick="toggleBottomBoxParagraphs()">
+      <div class="paragraphs hidden" id="bottomBoxParagraphs">
+        <p>Parce que nous voulons ce que vous voulez. Nous mettons au service de vos projets notre expertise, nos valeurs et notre philosophie.
+
+Philosophie :
+Parce que nous sommes avant tout des êtres humains, nous nous mettons à votre place.
+Notre première mission consiste à installer un climat de confiance, sans laquelle nous ne saurions travailler, et à vous en apprendre plus sur nous et nos valeurs.
+Compréhension
+Nous grandissons à travers les projets confiés. C’est pourquoi nous faisons preuve d’une écoute attentive à vos besoins, afin de comprendre votre personnalité et celle de votre entreprise.
+Exigence
+Le résultat ne doit pas seulement être le parfait reflet de vos idées. Il est conjointement construit par un accompagnement constant tout du long de votre projet et de propositions adéquates. C’est notre expérience et cette volonté d’épanouissement, dans le domaine du numérique, qui nous permet de vous proposer les stratégies digitales les mieux adaptées.
+Fiabilité
+Parce que cet accompagnement ne s’arrête pas au lancement de votre projet. Notre démarche d’amélioration continue nous pousse à sans cesse revoir nos processus et à suivre l’évolution de vos objectifs, en vous apportant support et optimisation.</p>
+      </div>
+    </div>
+    </div>
+  </div>
     <!-- fin about section -->
 
 
@@ -315,6 +353,8 @@ Vous êtes au bon endroit ! Transmettez vos messages à travers des campagnes de
     </div>
     <p>&copy; Nom. Tous droits réservés.</p>
      <script src="assets/js/app.js"></script>
+     <script src="assets/js/subtitle.js"></script>
+     <script src="assets/js/ic_bottombox.js"></script>
 
 </body>
 </html>
