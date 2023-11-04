@@ -114,8 +114,8 @@ body{
             align-items: center;
         }
         .ic-principal{
-            
-            height: auto;
+            background-color: #0E0922;
+            height: 5vw;
             margin: auto;
         }
         .ic-principal img{
@@ -143,6 +143,7 @@ body{
             margin: 2%;
             width: 30%;
             height: auto;
+             background-color: #0E0922;
         }
          .ic-secondaire img:hover{
             width: 35% !important;
@@ -214,6 +215,7 @@ img {
     cursor: pointer;
 }
 .menu_textes{
+     background-color: #0E0922;
     font-size: 1.5vw;
     width: 90%;
     align-items: center;
@@ -240,7 +242,7 @@ img {
     box-shadow: 0 0 10px rgba(255,255,255,.2);
     color: white;
     flex: calc(33.33% - 20px); 
-    margin: 15px; 
+    margin: 50px; 
     text-align: center; 
     transition: 0.2s;
     
@@ -441,178 +443,203 @@ img {
 }
 
 
-/* Styles pour la Box 5 */
-#box5 {
-    background-size: cover;
-    background-position: center center;
-    background-image: ur(../medias/pourquoi.png);
-    text-align: center; /* Centrer le contenu */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centrer verticalement */
-    align-items: center; /* Centrer horizontalement */
-    position: relative; /* Position relative pour positionner le titre sur l'image */
-    width: 100%; /* La Box 5 occupe 100% de la largeur de son conteneur */
-    height: 80vh; /* Hauteur de la Box 5 égale à la hauteur de la fenêtre */
+
+
+
+
+
+
+/* Section Blog & Actus */
+.blog-section {
+    color: white;
+    width: 90%;
+    margin: auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #0E0922;
+  margin-bottom: 5%;
 }
 
-/* Style pour le titre */
-.box5-title {
-    font-size: 3vw;
-    margin: 0;
-    width: 100%;
-    margin-top: 20px;
+/* Titre de la section */
+.section-title {
+  font-size: 2em;
 }
 
-/* Animation de flottement pour le titre */
-.animated {
-    animation: floatAnimation 2s ease infinite;
+/* Ligne de division */
+.section-divider {
+  width: 80px;
+  height: 2px;
+  background-color: #333;
+  margin: 20px auto;
 }
 
-@keyframes floatAnimation {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+/* Paragraphe d'introduction */
+.section-paragraph {
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }
 
-/* Style pour l'icône */
-.box5-content {
-    margin-top: 20px; /* Espacement entre le titre et l'icône */
+/* Conteneur des petits boxes */
+.box-container2 {
+  display: flex;
+  justify-content: space-between;
+  color: black;
 }
 
-/* Style pour le lien de l'icône */
-.box5-content a {
-    text-decoration: none;
-    color: #333;
+/* Box de blog individuel */
+.blog-box {
+  width: 30%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
 }
 
-/* Style pour l'icône */
-.box5-content img {
-    width: 50px;
-    transition: 0.5s;
-}
-.box5-content img:hover {
-    width: 55px;
+/* Image dans le box */
+.blog-box img {
+  max-width: 100%;
+  height: auto;
 }
 
-
-
-
-
-/* Styles pour la Box 6 */
-/* Styles pour la Box 6 */
-#box6 {
-    width: 100%; /* La Box 6 occupe 100% de la largeur de son conteneur */
-    height: 80vh;
-    text-align: center; /* Centrer le contenu */
-    padding: 0 ; /* Espacement en haut et en bas du titre */
-    position: relative; /* Position relative pour placer les petites boîtes en bas */
+/* Bouton "Lire la suite" */
+.read-more-button {
+  background-color: skyblue;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
-/* Style pour le titre */
-.box6-title {
-    background-color: black; /* Fond noir */
-    color: white; /* Texte blanc */
-    font-size: 3vw;
-    margin: 0;
-    padding: 10px;
-}
 
-/* Style pour le conteneur des petites boîtes */
-.small-boxes-container {
-    height: 80%;
-    overflow-y: scroll;
-    display: flex;
-    flex-direction: column; /* Aligner les petites boîtes verticalement */
-    align-items: center; /* Centrer les petites boîtes horizontalement */
+
+/* Box principal about */
+
+.main-box {
     padding: 20px;
-    bottom: 0; /* Aligner les petites boîtes en bas */
-    left: 0; /* Centrer les petites boîtes horizontalement */
-    right: 0; /* Centrer les petites boîtes horizontalement */
-}
-
-/* Style pour chaque petite boîte */
-.small-box {
-    background-color: transparent;
-    border: 2px solid white; /* Bordure blanche */
-    border-radius: 10px; /* Bordures arrondies */
-    padding: 10px;
-    text-align: center;
-    height: auto;
-   width: 95%;
-    margin-right:2%;
-    margin-left:2%;
-    margin: 2%;
-}
-
-/* Style pour le titre de chaque petite boîte */
-.small-box-title {
-    color: skyblue;
-    font-size: 24px;
-    margin: 0;
-}
-
-
-/* Style pour le sous-titre de chaque petite boîte */
-.small-box-subtitle {
-    font-size: 16px;
-    margin: 0;
-    text-align: left;
-}
-.small-box a{
     color: white;
-}
-.small-box a:hover{
-    text-decoration: none;
-    color: grey;
-}
-
-
-
-/* Style pour la section "À Propos" */
-.about-section {
-    color: white;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
     border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 88%;
-    margin: 0 auto;
-    padding: 20px;
+   background-color: #0E0922;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-/* Style de la partie de gauche */
-.left-side {
-    flex: 1;
-    padding: 20px;
-    text-align: center;
+/* Grand titre IDEA */
+.main-title {
+  font-size: 2.5em;
+  width: 100%;
 }
 
-.left-side h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+/* Sous-titre Impulse Digital experience Agency */
+.sub-title {
+  font-size: 1.5em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-/* Style de la partie de droite (l'image) */
-.right-side {
-    flex: 1;
-    text-align: center;
+/* Styles pour les animations des mots */
+.animated-text {
+  opacity: 0;
+  animation: appear 2s ease-in-out infinite;
 }
 
-.right-side img {
-    max-width: 100%;
-    height: auto;
+/* Espaces entre les mots */
+.space {
+  width: 1em; /* Ajustez la largeur de l'espace selon vos besoins */
 }
+
+/* Animation des mots */
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Animation des mots individuels */
+.animated-text:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.animated-text:nth-child(2) {
+  animation-delay: 2s; /* Décalage de 2 secondes pour le deuxième mot */
+}
+
+.animated-text:nth-child(3) {
+  animation-delay: 4s; /* Décalage de 4 secondes pour le troisième mot */
+}
+
+.animated-text:nth-child(4) {
+  animation-delay: 6s; /* Décalage de 6 secondes pour le quatrième mot */
+}
+
+/* Petits boxes côte à côte */
+.sub-box {
+  width: 50%;
+  text-align: center;
+}
+.sub1 {
+    margin-top: 5%;
+}
+
+/* Titres dans les petits boxes */
+.sub-title {
+  font-size: 2vw;
+}
+.sub-box p{
+    font-size: 1.3vw;
+}
+
+/* Image dans le deuxième petit box */
+.sub-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Bas du grand box */
+.bottom-box {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Titre au bas du grand box */
+.bottom-title {
+  font-size: 1.5em;
+}
+
+/* Icône au bas du grand box */
+.bottom-box img {
+  max-width: 50px;
+  height: auto;
+}
+/* Paragraphe caché */
+.paragraphs.hidden {
+  display: none;
+}
+
+
+
+
+
+
+
+
 
 /* Style de base pour la section "Avis des Clients" */
 .customer-reviews {
+    background-color: #0E0922;
     color: white;
     text-align: center;
     margin: 6%;
@@ -1160,4 +1187,408 @@ button:hover {
   padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# ligne et point
+--------------------------------------------------------------*/
+
+.center-line {
+            position: absolute;
+            top: 70vh;
+            height: 250vw;
+            bottom: 0;
+            left: 50%;
+            width: 1px; /* Épaisseur de la ligne verticale */
+            background-color: white; /* Couleur de la ligne */
+            z-index: -1;
+        }
+
+        .point {
+            clip-path: polygon(41% 35%, 77% 0, 50% 41%, 87% 42%, 64% 66%, 28% 100%, 53% 56%, 20% 56%);
+            top: 70vh;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: white; /* Couleur du point lumineux */
+            left: 50%; /* Centré horizontalement */
+            transform: translate(-50%, 650%); /* Centré verticalement par rapport à la ligne */
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
+            z-index: -1;
+        }   
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Creation site web
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background: #68A4C4;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #85b6cf;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+}
+
+.section-bg {
+  background-color: #f3f8fa;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #68A4C4;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+  font-size: 1.5vw;
+}
+
+/*--------------------------------------------------------------
+# Features
+--------------------------------------------------------------*/
+.features .row+.row {
+  margin-top: 100px;
+}
+
+.features h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features ul li {
+  padding-bottom: 10px;
+}
+
+.features ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #68A4C4;
+}
+
+.features p:last-child {
+  margin-bottom: 0;
+}
+
+
+
+/*--------------------------------------------------------------
+conception graphique digital
+--------------------------------------------------------------*/
+.main-title {
+  text-align: center;
+  font-size: 2em;
+  padding: 20px 0;
+  color: #fff;
+}
+.divider {
+  border: none;
+  border-top: 2px solid #333; /* Couleur et épaisseur du trait */
+  margin: 0 auto;
+  width: 80px; /* Largeur du trait */
+}
+ /* Conteneur */
+
+.containe {
+    width: 95%;
+    margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Box individuelle */
+.containe > div {
+    border-radius: 10px;
+    color: white;
+  width: calc(33.33% - 20px);
+  background-color: rgba(250, 250, 250, 0.1);
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+.containe > div:hover{
+    opacity: 1;
+}
+
+/* Image dans la box */
+.containe > div img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Titre dans la box */
+.containe > div h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+/* Paragraphe dans la box */
+.containe > div p {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+/* Bouton "Nous contacter" */
+.containe > div button {
+  background-color: #ffcc00;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/*--------------------------------------------------------------
+assistance et gestion
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background: #0E0922;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #0E0922;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #fef8f5;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1px;
+  margin-bottom: 15px;
+  color: #c2b7b1;
+}
+
+.section-title p {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  font-weight: 700;
+  
+}
+
+.section-title p::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #eb5d1e;
+  bottom: 0;
+  left: calc(50% - 30px);
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about h3 {
+  font-weight: 700;
+  font-size: 34px;
+  color: #ffffff;
+}
+
+.about h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 5px;
+  color: #cccbca;
+}
+
+.about i {
+  font-size: 48px;
+  margin-top: 15px;
+  color: #ffffff;
+}
+
+.about p {
+  font-size: 15px;
+  color: #5a6570;
+}
+
+@media (max-width: 991px) {
+  .about .about-img img {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 767px) {
+  .about .about-img img {
+    max-width: 90%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 40px 0;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  border-radius: 15px;
+  text-align: center;
+  border-bottom: 3px solid #fff;
+}
+
+.services .icon-box:hover {
+  transform: translateY(-5px);
+  border-color: #0E0922;
+}
+
+.services .icon i {
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 15px;
+  color: #0E0922;
+}
+
+.services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.services .title a {
+  color: #111;
+}
+
+.services .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.description {
+  color: #0E0922;
+}
+
+.text-center {
+  color :#0E0922;
+}
+
+.op {
+  color: rgb(163, 157, 157);
+}
+
+#pla , #con , #re {
+  text-transform: uppercase;
+  font-weight: bolder;
 }

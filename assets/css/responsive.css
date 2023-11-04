@@ -25,6 +25,7 @@
         align-items: center;
         justify-content: center;
         text-align: center;
+        margin-top: 140px;
     }
     .menu_textes{
     font-size: 3vw;
@@ -132,6 +133,32 @@
 .image1-container, .image2-container{
     display: none;
 }
+.sub-box {
+    width: 100%;
+  }
+  .sub-box p{
+    font-size: 2vw;
+}
+.box-container2 {
+    flex-direction: column;
+  }
+
+  .blog-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .center-line {
+        display: none;
+        }
+
+        .point {
+         display: none;
+        }   
+    .containe > div {
+    width: 100%;
+  }
+}
+
 }
 
 /* Pour les écrans de largeur > 768px */
@@ -142,6 +169,10 @@
     .col {
         width: auto;
     }
+    .containe > div {
+    width: calc(50% - 20px);
+  }
+
 }
 
 
