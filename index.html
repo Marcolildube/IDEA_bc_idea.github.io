@@ -301,39 +301,29 @@ Parce que cet accompagnement ne s’arrête pas au lancement de votre projet. No
 
 
 
-    <section class="customer-reviews">
-    <h2 class="section-title">Avis des Clients</h2>
-    <div class="review-slider slick-slider">
-        <div class="review-box">
-            <h3 class="review-title">Avis client 1</h3>
-            <div class="review-content">
-                <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </div>
-        <div class="review-box">
-            <h3 class="review-title">Avis client 2</h3>
-            <div class="review-content">
-                <p class="review-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-        </div>
-        <!-- Ajoutez plus d'avis au besoin -->
+   <h1 class="title">Donner un avis</h1>
+    <div class="rating">
+        <span class="star" data-rating="1">★</span>
+        <span class="star" data-rating="2">★</span>
+        <span class="star" data-rating="3">★</span>
+        <span class="star" data-rating="4">★</span>
+        <span class="star" data-rating="5">★</span>
     </div>
     <div class="review-form">
-        <h3>Ajouter un Avis</h3>
-        <form>
-            <div class="form-group">
-                <label for="author">Auteur :</label>
-                <input type="text" id="author" name="author" required>
-            </div>
-            <div class="form-group">
-                <label for="review">Votre Avis :</label>
-                <textarea id="review" name="review" required></textarea>
-            </div>
+        <form id="review-form">
+            <input type="text" id="author" placeholder="Auteur">
+            <textarea id="review" placeholder="Votre avis"></textarea>
             <button type="submit">Soumettre</button>
         </form>
     </div>
-</section>
-
+    <div class="review-list">
+        <!-- Cette zone affichera les avis des clients (défilement) -->
+        <div class="reviews-container">
+            <div class="review-item">Avis 1</div>
+            <div class="review-item">Avis 2</div>
+            <div class="review-item">Avis 3</div>
+        </div>
+    </div>
 
 
      <div class="footer">
@@ -355,6 +345,7 @@ Parce que cet accompagnement ne s’arrête pas au lancement de votre projet. No
      <script src="assets/js/app.js"></script>
      <script src="assets/js/subtitle.js"></script>
      <script src="assets/js/ic_bottombox.js"></script>
+     <script src="assets/js/avis.js"></script>
 
 </body>
 </html>
