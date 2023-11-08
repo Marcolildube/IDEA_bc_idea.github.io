@@ -116,10 +116,11 @@ body{
         .ic-principal{
             background-color: #0E0922;
             height: 5vw;
+            width: 5vw;
             margin: auto;
         }
         .ic-principal img{
-            width: 6%;
+            width: 99.5%;
             height: auto;
             line-height: 100px; 
             color: white; 
@@ -128,7 +129,7 @@ body{
 
         }
         .ic-principal img:hover{
-            width: 6.5%;
+            width: 100%;
         }
         .ic-secondaire{
             width: 100%;
@@ -228,7 +229,7 @@ img {
 /* Style for the box container */
 .box-container {
     max-width: 90%; 
-    margin: 20px auto; 
+    margin: 10vw auto; 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; 
@@ -637,90 +638,74 @@ img {
 
 
 
-/* Style de base pour la section "Avis des Clients" */
-.customer-reviews {
-    background-color: #0E0922;
-    color: white;
-    text-align: center;
-    margin: 6%;
-    padding: 5%;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-}
-/* Style pour le titre de la section */
-.section-title {
+.title {
     font-size: 36px;
-    margin-bottom: 20px;
-    position: relative;
-    animation: waveAnimation 2s ease-in-out infinite; /* Ajouter une animation en boucle */
-}
-
-/* Animation en boucle "waveAnimation" */
-@keyframes waveAnimation {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    25% {
-        transform: translateY(-5px);
-    }
-    50% {
-        transform: translateY(0);
-    }
-    75% {
-        transform: translateY(5px);
-    }
-}
-
-
-
-/* Style pour les boîtes d'avis */
-.review-box {
-    background-color: white;
-    color: black !important;
-    border: 1px solid #ccc;
+    text-align: center;
+    margin-top: 20px;
     padding: 10px;
-    margin: 10px 0;
-    border-radius: 10px;
 }
 
-/* Style pour le texte des avis */
-.review-text {
-    font-size: 16px;
-}
-
-/* Style pour le formulaire */
-.review-form {
+.rating {
+    font-size: 24px;
+    text-align: center;
     margin-top: 20px;
 }
 
-/* Style pour les éléments du formulaire */
-.form-group {
-    margin-bottom: 10px;
+.star {
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.3s;
 }
 
-label {
+.star.selected {
+    color: gold;
+}
+
+.review-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    display: none;
+    text-align: center;
+    margin: 20px;
+}
+
+input, textarea {
     display: block;
-    font-weight: bold;
-}
-
-input[type="text"],
-textarea {
     width: 100%;
-    padding: 10px;
+    margin: 10px 0;
+    padding: 5px;
 }
 
 button {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
     border: none;
+    padding: 10px 20px;
     cursor: pointer;
 }
 
-/* Style pour le bouton de soumission du formulaire */
-button:hover {
-    background-color: #555;
+.review-list {
+    text-align: left;
+    margin: 20px;
+    padding: 10px;
+    overflow: hidden;
 }
 
+.reviews-container {
+    display: flex;
+    flex-direction: column-reverse;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.review-item {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+}
 
 
 
