@@ -1,44 +1,30 @@
-const stars = document.querySelectorAll('.star');
-const reviewForm = document.querySelector('.review-form');
-const authorInput = document.querySelector('#author');
-const reviewInput = document.querySelector('#review');
-const reviewFormElement = document.querySelector('#review-form');
-const reviewsContainer = document.querySelector('.reviews-container');
+const etoiles = document.querySelectorAll('.etoile');
+const avisForm = document.getElementById('avisForm');
+const submitBtn = document.getElementById('submitBtn');
 
-let selectedRating = 0;
+etoiles.forEach((etoile, index) => {
+    etoile.addEventListener('click', () => {
+        etoiles.forEach((e, i) => {
+            if (i <= index) {
+                e.classList.add('allume');
+            } else {
+                e.classList.remove('allume');
+            }
+        });
 
-stars.forEach((star, index) => {
-    star.addEventListener('click', () => {
-        selectedRating = index + 1;
-
-        for (let i = 0; i <= index; i++) {
-            stars[i].classList.add('selected');
-        }
-
-        for (let i = index + 1; i < stars.length; i++) {
-            stars[i].classList.remove('selected');
-        }
-
-        reviewForm.style.display = 'block';
+        avisForm.style.display = 'block';
     });
 });
 
-reviewFormElement.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const author = authorInput.value;
-    const review = reviewInput.value;
+submitBtn.addEventListener('click', () => {
+    const avisText = document.getElementById('avisText').value;
+    const auteur = document.getElementById('auteur').value;
 
-    if (selectedRating > 0 && author && review) {
-        // Créez un élément pour afficher l'avis dans la liste des avis.
-        const reviewItem = document.createElement('div');
-        reviewItem.classList.add('review-item');
-        reviewItem.innerHTML = `<strong>${author} a donné ${selectedRating} étoiles :</strong><p>${review}</p>`;
-        reviewsContainer.insertBefore(reviewItem, reviewsContainer.firstChild);
+    // Ajoutez le code pour traiter l'avis soumis, par exemple, l'envoyer à un serveur ou le stocker localement.
 
-        // Réinitialisez le formulaire.
-        authorInput.value = '';
-        reviewInput.value = '';
-        reviewForm.style.display = 'none';
-        selectedRating = 0;
-    }
+    // Réinitialisez le formulaire après la soumission
+    avisForm.style.display = 'none';
+    etoiles.forEach(e => e.classList.remove('allume'));
+    document.getElementById('avisText').value = '';
+    document.getElementById('auteur').value = '';
 });
