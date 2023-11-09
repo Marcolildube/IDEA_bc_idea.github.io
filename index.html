@@ -59,7 +59,7 @@
 
                 <a href="about.html">
                 <img src="assets/medias/4.png">
-                <p>A PROPOS</p>
+                <p>APROPOS</p>
                 </a>
 
                 <a href="contact.html">
@@ -103,7 +103,7 @@
         <!-- fin BULLES -->
         
       <div class="center-line"></div>
-    <div class="point"></div>
+    <div class="point"><img src="assets/medias/lighting.png"></div>
     <script>
         const point = document.querySelector(".point");
         const centerLine = document.querySelector(".center-line");
@@ -148,7 +148,7 @@
 
      <div class="box-container">
 
-        <div class="box slyde" id="box1">
+        <div class="box" id="box1">
             <h2 class="box1-title">Assistance virtuelle</h2>
         <div class="box1-content">
             <p>Les entreprises se tournent de plus en plus vers les assistants virtuels: En effet, les nouvelles technologies de l`information et de la communication offrent de nombreuses opportunites pour diriger son entreprise et gagner en flexibilite.</p>
@@ -160,7 +160,7 @@
         </div>
         </div>
 
-        <div class="box slyde" id="box2">
+        <div class="box" id="box2">
             <div class="box2-image">
             <img src="assets/medias/202855452_l.jpg" alt="Image de la Box 2">
         </div>
@@ -170,7 +170,7 @@
         </div>
         </div>
 
-        <div class="box slyde" id="box3">
+        <div class="box " id="box3">
         <h2 class="box3-title">Social Media Manager</h2>
         <div class="box3-content">
             <p>Vous ne disposez pas des ressources nécessaires ou vous n’avez simplement pas le temps de vous occuper de la gestion de vos réseaux sociaux ? Confiez la gestion de votre présence sur les médias sociaux, à notre Community Manager.
@@ -182,7 +182,7 @@ Nous vous accompagnons à toutes les étapes de votre déploiement sur les rése
         </div>
     
 
-        <div class="box slyde" id="box4">
+        <div class="box " id="box4">
             <h2 class="box4-title">Creer votre site internet</h2>
         <div class="box4-content">
             <p>Vous souhaitez créer un site internet pour être présent sur les moteurs de recherche, pour accentuez votre crédibilité et celle de votre entreprise ? <br> 
@@ -264,23 +264,25 @@ Vous êtes au bon endroit ! Transmettez vos messages à travers des campagnes de
     <!-- debut about section -->
     <div class="main-box">
     <h1 class="main-title">IDEA</h1>
-   <p class="sub-title" id="subtitle">Impulse Digital experience Agency</p>
+   
 
 
 
     <div class="sub-box sub1">
       <h2 class="sub-title">A propos de nous</h2>
       <p>Impulse Digital Experience Agency est une agence de communication, markrting digital, développement web et multiservice à l'international. Nous mettons en place des stratégies personnalisées afin d'obtenir des solutions adéquates st éfficaces pour répondre aux attentes des entreprises et entités avec lesquelles nous travaillons Une implication totale pour obtenir des résultats et emmener nos collaborateurs à un niveau supérieur.</p>
+      <div class="bottom-box">
+      <img src="assets/medias/plus.png" alt="Icône" onclick="toggleBottomBoxParagraphs()"> </div>
       
     </div>
 
-    <div class="sub-box">
+    <div class="sub-box about-image">
       <img src="assets/medias/about-image.jpg" alt="Image">
     </div>
 
     <div class="bottom-box">
-      <h3 class="bottom-title">Pourquoi nous?</h3>
-       <img src="assets/medias/plus.png" alt="Icône" onclick="toggleBottomBoxParagraphs()">
+      
+       
       <div class="paragraphs hidden" id="bottomBoxParagraphs">
         <p>Parce que nous voulons ce que vous voulez. Nous mettons au service de vos projets notre expertise, nos valeurs et notre philosophie.
 
@@ -300,31 +302,25 @@ Parce que cet accompagnement ne s’arrête pas au lancement de votre projet. No
     <!-- fin about section -->
 
 
-
-   <h1 class="title">Donner un avis</h1>
-    <div class="rating">
-        <span class="star" data-rating="1">★</span>
-        <span class="star" data-rating="2">★</span>
-        <span class="star" data-rating="3">★</span>
-        <span class="star" data-rating="4">★</span>
-        <span class="star" data-rating="5">★</span>
-    </div>
-    <div class="review-form">
-        <form id="review-form">
-            <input type="text" id="author" placeholder="Auteur">
-            <textarea id="review" placeholder="Votre avis"></textarea>
-            <button type="submit">Soumettre</button>
-        </form>
-    </div>
-    <div class="review-list">
-        <!-- Cette zone affichera les avis des clients (défilement) -->
-        <div class="reviews-container">
-            <div class="review-item">Avis 1</div>
-            <div class="review-item">Avis 2</div>
-            <div class="review-item">Avis 3</div>
+<div class="avis-section">
+        <h2>Donner un avis</h2>
+        <div class="etoiles" id="etoiles">
+            <span class="etoile" data-rating="1">&#9733;</span>
+            <span class="etoile" data-rating="2">&#9733;</span>
+            <span class="etoile" data-rating="3">&#9733;</span>
+            <span class="etoile" data-rating="4">&#9733;</span>
+            <span class="etoile" data-rating="5">&#9733;</span>
+        </div>
+        <div class="avis-form" id="avisForm">
+            <form>
+                <label for="avisText">Votre avis :</label>
+                <textarea id="avisText" name="avisText"></textarea>
+                <label for="auteur">Votre nom :</label>
+                <input type="text" id="auteur" name="auteur">
+                <button type="button" id="submitBtn">Soumettre</button>
+            </form>
         </div>
     </div>
-
 
      <div class="footer">
         <input type="email" class="email-bar" placeholder="Votre adresse email">
@@ -342,10 +338,10 @@ Parce que cet accompagnement ne s’arrête pas au lancement de votre projet. No
 
     </div>
     <p>&copy; Nom. Tous droits réservés.</p>
-     <script src="assets/js/app.js"></script>
      <script src="assets/js/subtitle.js"></script>
      <script src="assets/js/ic_bottombox.js"></script>
      <script src="assets/js/avis.js"></script>
+     <script src="assets/js/opacity.js"></script>
 
 </body>
 </html>
