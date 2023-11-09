@@ -6,6 +6,7 @@ body{
     font-family: roboto, sans-serif !important;
     background-color: #0E0922 !important;
 }
+
 .background-video {
    position: absolute;
     top: 0;
@@ -133,28 +134,28 @@ body{
         }
         .ic-secondaire{
             width: 100%;
-            align-items: center;
             justify-content: center;
-           margin-top: 3%;
             text-align: center;
             display: flex;
             visibility: hidden;
             }
         .ic-secondaire img{
             margin: 2%;
-            width: 30%;
+            width: 5vw;
             height: auto;
              background-color: #0E0922;
         }
          .ic-secondaire img:hover{
-            width: 35% !important;
+            width: 5.2vw !important;
         }
         .ic-secondaire a{
             text-decoration: none !important;
+            margin: 1vw 4vw;
         }
         .ic-secondaire a p{
-            font-size: 1vw;
+            font-size: 01vw;
             color: white;
+            padding: 5px;
             
         }
         .icon-container img:hover{
@@ -245,7 +246,8 @@ img {
     flex: calc(33.33% - 20px); 
     margin: 50px; 
     text-align: center; 
-    transition: 0.2s;
+     opacity: 0.1;
+    transition: opacity 0.5s;
     
 }
 .box:hover{
@@ -261,8 +263,17 @@ img {
     opacity: 1; 
     transform: translateX(0); 
 }
+.opacity-visible {
+    opacity: 1;
 
+}
+
+#box1{
+    top: 0;
+    left: 0;
+}
    /* Style pour le titre */
+}
 .box1-title {
     font-size: 2vw;
     margin-top: 20px;
@@ -295,7 +306,10 @@ img {
     flex-direction: column;
     align-items: center;
     position: relative;
+     bottom: 0;
+    right: 0;
 }
+
 
 /* Style pour l'image */
 .box2-image {
@@ -470,7 +484,7 @@ img {
 .section-divider {
   width: 80px;
   height: 2px;
-  background-color: #333;
+  background-color: skyblue;
   margin: 20px auto;
 }
 
@@ -490,8 +504,9 @@ img {
 /* Box de blog individuel */
 .blog-box {
   width: 30%;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  color: white;
+  background-color: ;
+  border: 1px solid skyblue;
   padding: 20px;
   text-align: center;
 }
@@ -622,7 +637,12 @@ img {
 
 /* Icône au bas du grand box */
 .bottom-box img {
-  max-width: 50px;
+  max-width: 3vw;
+  height: auto;
+  transition: 0.5s;
+}
+.bottom-box img:hover {
+  max-width: 3.5vw;
   height: auto;
 }
 /* Paragraphe caché */
@@ -636,76 +656,60 @@ img {
 
 
 
+/* Avis */
 
-
-.title {
-    font-size: 36px;
-    text-align: center;
+.avis-section {
+    box-shadow: 0 0 10px rgba(255,255,255,.2);
+    background-color: #0E0922;
+    margin: auto;
     margin-top: 20px;
-    padding: 10px;
+    margin-bottom: 20px;
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    border-top: 2px double skyblue;
 }
 
-.rating {
-    font-size: 24px;
-    text-align: center;
-    margin-top: 20px;
+.etoiles {
+    font-size: 30px;
 }
 
-.star {
+.etoile {
     cursor: pointer;
     padding: 5px;
-    transition: color 0.3s;
 }
-
-.star.selected {
+.etoile.allume {
     color: gold;
 }
 
-.review-form {
-    text-align: center;
+.avis-form {
+    display: none;
     margin-top: 20px;
 }
 
 form {
-    display: none;
-    text-align: center;
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-input, textarea {
-    display: block;
-    width: 100%;
-    margin: 10px 0;
+label {
+    margin-bottom: 5px;
+}
+
+textarea, input {
+    margin-bottom: 10px;
     padding: 5px;
 }
 
 button {
-    background-color: #007BFF;
+    background-color: #3498db;
     color: #fff;
-    border: none;
-    padding: 10px 20px;
+    padding: 10px;
     cursor: pointer;
+    border: none;
 }
 
-.review-list {
-    text-align: left;
-    margin: 20px;
-    padding: 10px;
-    overflow: hidden;
-}
-
-.reviews-container {
-    display: flex;
-    flex-direction: column-reverse;
-    max-height: 300px;
-    overflow-y: auto;
-}
-
-.review-item {
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-    padding: 10px;
-}
 
 
 
@@ -1193,17 +1197,24 @@ button {
         }
 
         .point {
-            clip-path: polygon(41% 35%, 77% 0, 50% 41%, 87% 42%, 64% 66%, 28% 100%, 53% 56%, 20% 56%);
+            
             top: 70vh;
             position: absolute;
+            background-color: rgba(255,255,255,0.2);
             width: 20px;
             height: 20px;
-            background-color: white; /* Couleur du point lumineux */
+            border-radius: 50%;
             left: 50%; /* Centré horizontalement */
             transform: translate(-50%, 650%); /* Centré verticalement par rapport à la ligne */
             box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
             z-index: -1;
         }   
+        .point img{
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+
+        }
 
 
 

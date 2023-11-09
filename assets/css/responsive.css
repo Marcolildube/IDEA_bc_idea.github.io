@@ -157,7 +157,19 @@
     .containe > div {
     width: 100%;
   }
+  .avis-section {
+    width: 85%;
 }
+.about-image img {
+    max-width: 60%;
+}
+ .ic-secondaire a{
+            margin: 1vw 2vw;
+        }
+        .long-article a {
+    font-size: 3.5vw;
+}
+
 
 }
 
