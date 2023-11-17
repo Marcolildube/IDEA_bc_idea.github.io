@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Libs/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <title>IDEA/Acceuil</title>
@@ -21,10 +24,51 @@
     <!-- Inclure le script JS de Slick Carousel -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
      
 </head>
 
 <body>
+    <!-- Ajout du preloader -->
+  <div class="preloader-container">
+    <div class="preloader">
+      <div class="line shorter first"></div>
+      <div class="line longer second"></div>
+      <div class="line shorter third"></div>
+    </div>
+  </div>
+  <!-- Votre contenu HTML continue -->
+
+  <!-- JavaScript pour masquer le preloader après le chargement de la page -->
+  <script>
+    // Sélectionnez le preloader
+    const preloader = document.querySelector('.preloader');
+    const preloaderContainer = document.querySelector('.preloader-container');
+
+    // Enregistrez le temps actuel
+    const startTime = new Date().getTime();
+
+    // Attendez que le DOM soit chargé
+    document.addEventListener('DOMContentLoaded', () => {
+      // Calculez la durée de chargement de la page
+      const endTime = new Date().getTime();
+      const loadTime = endTime - startTime;
+
+      // Attendez un certain temps basé sur la durée de chargement de la page avant de cacher le preloader
+      setTimeout(() => {
+        preloader.classList.add('hidden');
+
+        // Retirez le fond blanc après la disparition du preloader
+        setTimeout(() => {
+          preloaderContainer.style.backgroundColor = 'transparent';
+        }, 500); // Temps d'attente en millisecondes avant de retirer le fond blanc
+      }, loadTime); // Attente basée sur la durée de chargement de la page
+    });
+  </script>
+
+
+
+
     <!--debut En tete -->
 
     <div>
