@@ -60,6 +60,15 @@
     .box {
         flex-basis: 100%; /* Boîtes à 100% de largeur sur les petits écrans */
     }
+    #box2{
+        top: 0vw;
+    }
+    #box4{
+        top: 0vw;
+    }
+    .blog-section{
+        margin: 0vw auto;
+    }
     .box1-title{
         font-size: 4vw;
     }

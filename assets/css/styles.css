@@ -301,6 +301,7 @@ img {
 
 /* Styles pour la Box 2 */
 #box2 {
+    top: 30vw;
     text-align: center; 
     display: flex;
     flex-direction: column;
@@ -433,6 +434,7 @@ img {
 
 /* Styles pour la Box 4 */
 #box4 {
+    top: 40vw;
     height: auto;
     text-align: center; /* Centrer le contenu */
     display: flex;
@@ -468,7 +470,7 @@ img {
 .blog-section {
     color: white;
     width: 90%;
-    margin: auto;
+    margin: 40vw auto;
   text-align: center;
   padding: 20px;
   background-color: #0E0922;
@@ -1194,6 +1196,7 @@ button {
             width: 1px; /* Épaisseur de la ligne verticale */
             background-color: white; /* Couleur de la ligne */
             z-index: -1;
+            
         }
 
         .point {
